@@ -21,6 +21,8 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: #f0f0f0;
+  box-sizing: border-box;
+  
   /* linear-gradient(
       to bottom,
       transparent,
@@ -28,9 +30,14 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
+.container-m {
+  padding-left: 75px;
+  padding-right: 75px;
+}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
 }
