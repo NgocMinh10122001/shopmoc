@@ -72,11 +72,17 @@ function Product({ product }: { product: IProduct }) {
           >
             {product?.status === "sell" && (
               <p className="font-light line-through text-sm text-light-gray">
-                {product?.oldPrice} <span className="underline">đ</span>
+                {product?.oldPrice.toLocaleString("vi", {
+                  style: "currency",
+                  currency: "VND",
+                })}{" "}
               </p>
             )}
             <p>
-              {product?.price} <span className="underline">đ</span>
+              {product?.price.toLocaleString("vi", {
+                style: "currency",
+                currency: "VND",
+              })}
             </p>
           </div>
         </div>

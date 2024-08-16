@@ -1,4 +1,4 @@
-import { IProduct } from "./types";
+import { IMenuCus2Data, IProduct, IUl } from "./types";
 
 export const products: IProduct[] = [
   {
@@ -9,9 +9,9 @@ export const products: IProduct[] = [
     thumbNailZoomIn:
       "https://shop.mixigaming.com/wp-content/uploads/2024/02/0C139EBE-0378-4E54-B0BE-E519FD6305CC-10373-00000A344FA6C159-300x400.jpg",
     name: "ĐỒ LƯU NIỆM MIXI",
-    des: "Cốc Mixi 1200ml",
+    des: "Cốc Mixi 120000000ml",
     rate: 5,
-    price: 200,
+    price: 20000000,
     status: "on",
   },
   {
@@ -22,9 +22,9 @@ export const products: IProduct[] = [
     thumbNailZoomIn:
       "https://shop.mixigaming.com/wp-content/uploads/2021/01/DSC01720-copy-300x400.jpg",
     name: "ĐỒ LƯU NIỆM MIXI",
-    des: "Cốc Mixi 1200ml",
+    des: "Cốc Mixi 120000000ml",
     rate: 5,
-    price: 200,
+    price: 20000000,
     status: "off",
   },
   {
@@ -35,9 +35,9 @@ export const products: IProduct[] = [
     thumbNailZoomIn:
       "https://shop.mixigaming.com/wp-content/uploads/2024/02/0C139EBE-0378-4E54-B0BE-E519FD6305CC-10373-00000A344FA6C159-300x400.jpg",
     name: "ĐỒ LƯU NIỆM MIXI",
-    des: "Cốc Mixi 1200ml",
+    des: "Cốc Mixi 120000000ml",
     rate: 5,
-    price: 200,
+    price: 20000000,
     status: "off",
   },
   {
@@ -48,9 +48,9 @@ export const products: IProduct[] = [
     thumbNailZoomIn:
       "https://shop.mixigaming.com/wp-content/uploads/2021/01/DSC01720-copy-300x400.jpg",
     name: "ĐỒ LƯU NIỆM MIXI",
-    des: "Cốc Mixi 1200ml",
+    des: "Cốc Mixi 120000000ml",
     rate: 5,
-    price: 200,
+    price: 20000000,
     status: "on",
   },
   {
@@ -61,9 +61,9 @@ export const products: IProduct[] = [
     thumbNailZoomIn:
       "https://shop.mixigaming.com/wp-content/uploads/2024/02/0C139EBE-0378-4E54-B0BE-E519FD6305CC-10373-00000A344FA6C159-300x400.jpg",
     name: "ĐỒ LƯU NIỆM MIXI",
-    des: "Cốc Mixi 1200ml",
+    des: "Cốc Mixi 120000000ml",
     rate: 5,
-    price: 200,
+    price: 20000000,
     status: "sell",
   },
   {
@@ -74,9 +74,82 @@ export const products: IProduct[] = [
     thumbNailZoomIn:
       "https://shop.mixigaming.com/wp-content/uploads/2021/01/DSC01720-copy-300x400.jpg",
     name: "ĐỒ LƯU NIỆM MIXI",
-    des: "Cốc Mixi 1200ml",
+    des: "Cốc Mixi 120000000ml",
     rate: 5,
-    price: 200,
+    price: 20000000,
     status: "on",
+  },
+];
+
+export const middle1: IUl[] = [
+  {
+    name: "Áo CSGO",
+    url: "",
+    status: "hot",
+  },
+  {
+    name: "Áo Mixi",
+    url: "",
+    status: "new",
+  },
+  {
+    name: "Áo PUBG",
+    url: "",
+    status: "popular",
+  },
+  {
+    name: "Áo Refund Gaming",
+    url: "",
+    status: null,
+  },
+  {
+    name: "Đồ lưu niệm Mixi",
+    url: "/danh-muc/do-luu-niem",
+    status: null,
+  },
+  {
+    name: "Áo ba lỗ",
+    url: "",
+    status: null,
+  },
+];
+export const middle2: IUl[] = [
+  {
+    name: "Giới thiệu",
+    url: "",
+    status: null,
+  },
+  {
+    name: "Chính sách bảo mật",
+    url: "",
+    status: null,
+  },
+  {
+    name: "Điều khoản ",
+    url: "",
+    status: null,
+  },
+  {
+    name: "Sitemap",
+    url: "",
+    status: null,
+  },
+];
+
+export const subMenuCus2Data: IMenuCus2Data[] = [
+  {
+    thumbNail:
+      "https://shop.mixigaming.com/wp-content/uploads/2021/11/NM_D9485-scaled.jpg",
+    link: "",
+  },
+  {
+    thumbNail:
+      "https://shop.mixigaming.com/wp-content/uploads/2021/01/binh-giu-nhiet-mixi-4-scaled.jpg",
+    link: "",
+  },
+  {
+    thumbNail:
+      "https://shop.mixigaming.com/wp-content/uploads/2021/01/2-scaled.jpg",
+    link: "",
   },
 ];

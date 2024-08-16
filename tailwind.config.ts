@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         "light-gray": "#666666d9",
         "deep-green": "#007784",
+        "category-menu": "#f5f0ea",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

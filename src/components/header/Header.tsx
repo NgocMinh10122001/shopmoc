@@ -6,12 +6,18 @@ import { GoChevronDown } from "react-icons/go";
 import { FaPhone } from "react-icons/fa6";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa6";
+import CategoryMenu from "./CategoryMenu";
 
 function Header() {
   const [showBar, setShowBar] = useState(false);
+  const [showCate, setShowCate] = useState(false);
   return (
-    <header className="text-black h-[100px] bg-white shadow-lg relative z-30   pt-[6px] ">
-      <div className="contai w-full px-[15px] mx-auto max-w-[1310px]">
+    <header
+      className={`text-black h-[100px] bg-white shadow-lg relative    pt-[6px] ${
+        showCate ? "z-40" : "z-30"
+      }`}
+    >
+      <div className="contai w-full container-m relative z-20">
         <div className=" flex items-center justify-between">
           <div
             className="mobile-bar min-[1016px]:hidden"
@@ -33,7 +39,10 @@ function Header() {
                 Home
                 <div className="w-full h-1 rounded-full bg-deep-green opacity-0 absolute bottom-0 group-hover:opacity-100 duration-300 ease-in-out "></div>
               </Link>
-              <div className="flex items-center gap-2 relative py-3 group">
+              <div
+                className="flex items-center gap-2 relative py-3 group cursor-pointer"
+                onClick={() => setShowCate(!showCate)}
+              >
                 <Link
                   href={""}
                   className="uppercase font-bold text-[14px] text-light-gray duration-300 ease-in-out hover:text-deep-green !leading-[16px] tracking-wide "
@@ -120,6 +129,7 @@ function Header() {
           ></div>
         )}
       </div>
+      <CategoryMenu showCate={showCate} />
     </header>
   );
 }

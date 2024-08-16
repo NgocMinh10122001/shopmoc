@@ -1,0 +1,69 @@
+import React, { useState } from "react";
+import TitleFilter from "./TitleFilter";
+import RangeSlider from "react-range-slider-input";
+import "react-range-slider-input/dist/style.css";
+import Link from "next/link";
+import { middle1 } from "@/components/type/fakedata";
+export default function Filter() {
+  const [price, setPrice] = useState<number[]>([0, 100000]);
+  const handleChangePrice = (e: any) => {
+    setPrice(e);
+  };
+
+  return (
+    <div className="filter">
+      <div className="filter-price">
+        <TitleFilter title="Lọc theo giá" />
+        <div className="pt-6 w-full">
+          <RangeSlider
+            min={0}
+            max={100000}
+            defaultValue={price}
+            onInput={handleChangePrice}
+          />
+          <div className="price-container w-full flex items-center justify-between mt-4">
+            <button className="btn-filter-price bg-[#666] hover:bg-[#515151] duration-300 ease-in-out rounded-full px-4 py-2 font-bold tracking-wider uppercase text-xs">
+              Lọc
+            </button>
+            <div className="price flex items-center gap-2 ">
+              <p className="text-black font-semibold text-base ">
+                <span className="font-light ">Giá</span>{" "}
+                {price[0].toLocaleString("vi", {
+                  style: "currency",
+                  currency: "VND",
+                })}{" "}
+              </p>
+              <p className="text-black ">-</p>
+              <p className="text-black font-semibold text-base ">
+                {price[1].toLocaleString("vi", {
+                  style: "currency",
+                  currency: "VND",
+                })}{" "}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="cate-product py-6">
+        <TitleFilter title="Danh mục sản phẩm" />
+        <ul className=" pt-3">
+          {middle1 &&
+            middle1.length > 0 &&
+            middle1.map((item, index) => (
+              <li className=" text-black py-2" key={index}>
+                <Link
+                  href={`${item.url}`}
+                  className="text-deep-green font-light text-base tracking-wide  hover:text-violet-500 duration-300 ease-in-out"
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+        </ul>
+      </div>
+      <div className="recent">
+        <TitleFilter title="Sản phẩm vừa xem" />
+      </div>
+    </div>
+  );
+}

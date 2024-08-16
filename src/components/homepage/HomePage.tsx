@@ -8,7 +8,7 @@ import { FaInstagram } from "react-icons/fa";
 function HomePage() {
   return (
     <main className="home-container ">
-      <div className="home-banner relative z-0">
+      <div className="home-banner relative z-30">
         {/* <div className="bg-[url('https://shop.mixigaming.com/wp-content/uploads/2024/02/419152112_384288470804062_5335351375390162625_n-scaled.jpg')] w-full h-[547px] bg-center bg-cover bg-no-repeat"></div> */}
         <img
           src="https://shop.mixigaming.com/wp-content/uploads/2024/02/419152112_384288470804062_5335351375390162625_n-scaled.jpg"
@@ -16,9 +16,9 @@ function HomePage() {
           className="object-cover w-full h-full"
         />
       </div>
-      <div className="best-sell py-[75px] ">
+      <div className="best-sell py-[75px] container-m">
         <h2 className="w-full text-3xl text-black font-bold  text-center tracking-wide">
-          <span className="text-[150%] ">BÁN CHẠY NHẤT</span>
+          <span className="text-[96%] sm:text-[150%] ">BÁN CHẠY NHẤT</span>
         </h2>
         <div className="w-full flex justify-center py-10 ">
           <ButtonCustom
@@ -26,8 +26,11 @@ function HomePage() {
             style="text-base overflow-hidden border-2 duration-300 ease-in-out font-semibold border-deep-green bg-white text-deep-green hover:bg-deep-green hover:text-white px-5 py-2 flex justify-center items-center"
           />
         </div>
-        <div className="best-sell-products w-full px-[15px] max-w-[1310px] mx-auto">
-          <ListProDuct products={products} />
+        <div className="best-sell-products w-full container-m">
+          <ListProDuct
+            products={products}
+            style={"grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mt-[60px]"}
+          />
         </div>
       </div>
       <div className="video  h-fit w-full px-[15px] mx-auto max-w-[1310px] relative mt-10">
@@ -65,7 +68,9 @@ function HomePage() {
       </div>
       <div className="feedback container-m py-[75px] flex flex-col items-center justify-center gap-20">
         <h2 className="w-full text-3xl text-black font-bold  text-center tracking-wide">
-          <span className="text-[150%] ">Awesome feedback</span>
+          <span className="text-[96%] container-m sm:text-[150%] ">
+            Awesome feedback
+          </span>
         </h2>
         <button className="flex text-white items-center justify-center gap-2 px-3 py-2 rounded-md  bg-deep-green hover:bg-blue-500 duration-300 ease-out">
           <FaInstagram size={12} color="white" />

@@ -31,8 +31,11 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 .container-m {
-  padding-left: 75px;
-  padding-right: 75px;
+  max-width: 1310px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right:  auto;
+  margin-left: auto;
 }
 
 @layer utilities {
