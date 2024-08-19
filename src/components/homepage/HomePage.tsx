@@ -29,7 +29,7 @@ function HomePage() {
         <div className="best-sell-products w-full container-m">
           <ListProDuct
             products={products}
-            style={"grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mt-[60px]"}
+            style={"grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mt-[50px]"}
           />
         </div>
       </div>

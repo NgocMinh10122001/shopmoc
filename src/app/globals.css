@@ -38,6 +38,31 @@ body {
   margin-left: auto;
 }
 
+.ant-pagination-item-active {
+  border-color: #007784 !important; 
+  background-color: #007784 !important;
+  color: white;
+}
+.ant-pagination-item-active a {
+  color: white !important;
+}
+
+.range-slider {
+  height: 6px !important;
+  background-color: transparent !important;
+}
+
+.range-slider .range-slider__thumb {
+  width: 16px !important;
+  height: 16px !important;
+  background-color: #666 !important;
+}
+
+.range-slider .range-slider__range {
+background-color: #666 !important;
+opacity: 0.5 !important;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

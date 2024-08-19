@@ -1,11 +1,12 @@
 "use client";
 import { IProduct } from "@/components/type/types";
+import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa6";
 
 function Product({ product }: { product: IProduct }) {
-  const [zoom, setZoom] = useState<boolean>(false);
   const [height, setHeight] = useState(window.innerWidth);
+  const router = useRouter();
 
   useEffect(() => {
     const handleResize = () => setHeight(window.innerWidth);
@@ -15,26 +16,35 @@ function Product({ product }: { product: IProduct }) {
   }, []);
   return (
     <div
-      className="product w-full overflow-hidden  "
-      onMouseEnter={(e) => setZoom(true)}
-      onMouseLeave={(e) => setZoom(false)}
+      className="product w-full overflow-hidden cursor-pointer"
+      onClick={() => router.push(`/san-pham/${product.name}`)}
     >
       <div
-        className={`zoomOut  bg-no-repeat w-full bg-cover   duration-1000 ease-in-out cursor-pointer relative`}
+        className={`zoomOut group bg-no-repeat w-full   cursor-pointer relative`}
       >
+        {/* background-image: url("${product.thumbNailZoomOut}"); */}
+        {/* .zoomOut:hover {
+              background-image: url("${product.thumbNailZoomIn}");
+            } */}
         <style jsx>
           {`
             .zoomOut {
-              background-image: url("${product.thumbNailZoomOut}");
               height: ${window.innerWidth > 678
                 ? `407`
                 : `${height * 0.52994791666}`}px;
             }
-            .zoomOut:hover {
-              background-image: url("${product.thumbNailZoomIn}");
-            }
           `}
         </style>
+        <img
+          src={`${product.thumbNailZoomOut}`}
+          alt="no-img"
+          className={`absolute top-0 bottom-0 left-0 right-0 opacity-100 group-hover:opacity-0 h-full object-cover duration-1000 ease-in-out`}
+        />
+        <img
+          src={`${product.thumbNailZoomIn}`}
+          alt="no-img"
+          className={`absolute top-0 bottom-0 left-0 right-0 opacity-0 group-hover:opacity-100 h-full object-cover duration-1000 ease-in-out`}
+        />
         {product?.status === "off" && (
           <div className="status absolute w-full h-fit py-5 bg-white opacity-70 top-[40%] text-center">
             <span className="uppercase text-black text-lg font-semibold ">
@@ -52,7 +62,7 @@ function Product({ product }: { product: IProduct }) {
       </div>
       <div className="content text-black text-center">
         <div className="top mt-3 text-light-gray">
-          <p className="font-light text-xs tracking-wide">{product?.name}</p>
+          <p className="font-light text-xs tracking-wide">{product?.title}</p>
           <p className="font-light text-base text-deep-green tracking-wide pt-1">
             {product?.des}
           </p>

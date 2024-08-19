@@ -4,8 +4,6 @@ import SubMenuCus2 from "./SubMenuCus2";
 import SubMenuCus from "./SubMenuCus";
 
 function CategoryMenu({ showCate }: { showCate: boolean }) {
-  console.log("check cate", showCate);
-
   return (
     <div
       className={`absolute  opacity-0 category-menu w-full h-fit py-[40px] bg-category-menu max-[1016px]:hidden shadow-xl  ${

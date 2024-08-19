@@ -1,9 +1,11 @@
+"use client";
 import React, { useState } from "react";
 import TitleFilter from "./TitleFilter";
 import RangeSlider from "react-range-slider-input";
 import "react-range-slider-input/dist/style.css";
 import Link from "next/link";
-import { middle1 } from "@/components/type/fakedata";
+import { middle1, productsRecent } from "@/components/type/fakedata";
+import ProductsRecent from "@/components/common/product/ProductsRecent";
 export default function Filter() {
   const [price, setPrice] = useState<number[]>([0, 100000]);
   const handleChangePrice = (e: any) => {
@@ -44,7 +46,7 @@ export default function Filter() {
           </div>
         </div>
       </div>
-      <div className="cate-product py-6">
+      <div className="cate-product mt-9">
         <TitleFilter title="Danh mục sản phẩm" />
         <ul className=" pt-3">
           {middle1 &&
@@ -53,7 +55,7 @@ export default function Filter() {
               <li className=" text-black py-2" key={index}>
                 <Link
                   href={`${item.url}`}
-                  className="text-deep-green font-light text-base tracking-wide  hover:text-violet-500 duration-300 ease-in-out"
+                  className="text-deep-green font-light text-base tracking-wide  hover:text-violet-500 duration-300 ease-in-out uppercase"
                 >
                   {item.name}
                 </Link>
@@ -61,8 +63,11 @@ export default function Filter() {
             ))}
         </ul>
       </div>
-      <div className="recent">
+      <div className="recent mt-9">
         <TitleFilter title="Sản phẩm vừa xem" />
+        <div className="pt-3">
+          <ProductsRecent productsRecent={productsRecent} />
+        </div>
       </div>
     </div>
   );

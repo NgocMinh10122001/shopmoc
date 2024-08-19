@@ -26,14 +26,17 @@ function Header() {
             <FaBars size={30} />
           </div>
           <div className="left flex items-center gap-7">
-            <div className="logo bg-[url('https://shop.mixigaming.com/wp-content/uploads/2019/06/logo-mixi-t%C3%A9t.png')] bg-contain w-[151px] h-[90px]"></div>
+            <Link
+              href={"/"}
+              className="logo bg-[url('https://shop.mixigaming.com/wp-content/uploads/2019/06/logo-mixi-t%C3%A9t.png')] bg-contain w-[151px] h-[90px]"
+            ></Link>
             <div className="hidden min-[1026px]:flex menu  items-center gap-5">
               <div className="relative py-3 cursor-pointer group">
                 <FaSearch size={16} />
                 <div className="w-full h-1 rounded-full bg-deep-green opacity-0 absolute bottom-0 group-hover:opacity-100 duration-300 ease-in-out "></div>
               </div>
               <Link
-                href={""}
+                href={"/"}
                 className="uppercase font-bold text-[14px] text-light-gray duration-300 ease-in-out hover:text-deep-green !leading-[16px] tracking-wide relative py-3 group"
               >
                 Home

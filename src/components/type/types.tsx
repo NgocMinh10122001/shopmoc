@@ -2,8 +2,10 @@ export interface IProduct {
   id: number;
   thumbNailZoomOut: string;
   thumbNailZoomIn: string;
+  title: string;
   name: string;
   des: string;
+  category: string;
   rate: string | number;
   price: number;
   status: string;
