@@ -17,7 +17,7 @@ function Product({ product }: { product: IProduct }) {
   return (
     <div
       className="product w-full overflow-hidden cursor-pointer"
-      onClick={() => router.push(`/san-pham/${product.name}`)}
+      onClick={() => router.push(`/san-pham/${product.id}`)}
     >
       <div
         className={`zoomOut group bg-no-repeat w-full   cursor-pointer relative`}
@@ -36,12 +36,12 @@ function Product({ product }: { product: IProduct }) {
           `}
         </style>
         <img
-          src={`${product.thumbNailZoomOut}`}
+          src={`${product.thumbNail[0]}`}
           alt="no-img"
           className={`absolute top-0 bottom-0 left-0 right-0 opacity-100 group-hover:opacity-0 h-full object-cover duration-1000 ease-in-out`}
         />
         <img
-          src={`${product.thumbNailZoomIn}`}
+          src={`${product.thumbNail[1]}`}
           alt="no-img"
           className={`absolute top-0 bottom-0 left-0 right-0 opacity-0 group-hover:opacity-100 h-full object-cover duration-1000 ease-in-out`}
         />

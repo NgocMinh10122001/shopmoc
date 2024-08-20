@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        "reduce-light-gray": "#00000008",
         "light-gray": "#666666d9",
         "deep-green": "#007784",
         "category-menu": "#f5f0ea",

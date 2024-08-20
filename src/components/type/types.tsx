@@ -1,7 +1,6 @@
 export interface IProduct {
   id: number;
-  thumbNailZoomOut: string;
-  thumbNailZoomIn: string;
+  thumbNail: string[];
   title: string;
   name: string;
   des: string;
@@ -10,6 +9,8 @@ export interface IProduct {
   price: number;
   status: string;
   oldPrice: string | number;
+  sizeThumbNail: string;
+  size: string[];
 }
 
 export interface IUl {
