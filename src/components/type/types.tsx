@@ -11,6 +11,7 @@ export interface IProduct {
   oldPrice: string | number;
   sizeThumbNail: string;
   size: string[];
+  comments: IComment[];
 }
 
 export interface IUl {
@@ -34,4 +35,11 @@ export interface IMainCategory {
   totalP: string | number;
   products: IProduct[];
   recent: any[];
+}
+
+export interface IComment {
+  userId: string | number;
+  content: string;
+  userName: string;
+  evaluate: number | string;
 }

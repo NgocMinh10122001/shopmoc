@@ -18,6 +18,32 @@ export const products: IProduct[] = [
     sizeThumbNail:
       "https://shop.mixigaming.com/wp-content/uploads/2024/05/438299703_980381316392135_3793514272241113458_n-800x400.jpg",
     status: "on",
+    comments: [
+      {
+        userId: "1",
+        content: "dep da man",
+        userName: "Minh123",
+        evaluate: 5,
+      },
+      {
+        userId: "2",
+        content: "dep da man 2",
+        userName: "Minhvt",
+        evaluate: 5,
+      },
+      {
+        userId: "3",
+        content: "dep da man 3",
+        userName: "Minhqn",
+        evaluate: 5,
+      },
+      {
+        userId: "4",
+        content: "dep da man 4",
+        userName: "Minhdz",
+        evaluate: 5,
+      },
+    ],
   },
   {
     id: 2,
@@ -32,6 +58,32 @@ export const products: IProduct[] = [
     rate: 5,
     category: "souvenirs",
     price: 200000,
+    comments: [
+      {
+        userId: "1",
+        content: "dep da man",
+        userName: "Minh123",
+        evaluate: 5,
+      },
+      {
+        userId: "2",
+        content: "dep da man 2",
+        userName: "Minhvt",
+        evaluate: 5,
+      },
+      {
+        userId: "3",
+        content: "dep da man 3",
+        userName: "Minhqn",
+        evaluate: 5,
+      },
+      {
+        userId: "4",
+        content: "dep da man 4",
+        userName: "Minhdz",
+        evaluate: 5,
+      },
+    ],
     size: ["S", "M", "L", "XL", "2XL"],
     sizeThumbNail:
       "https://shop.mixigaming.com/wp-content/uploads/2024/05/438299703_980381316392135_3793514272241113458_n-800x400.jpg",
@@ -50,6 +102,32 @@ export const products: IProduct[] = [
     rate: 5,
     category: "",
     price: 200000,
+    comments: [
+      {
+        userId: "1",
+        content: "dep da man",
+        userName: "Minh123",
+        evaluate: 5,
+      },
+      {
+        userId: "2",
+        content: "dep da man 2",
+        userName: "Minhvt",
+        evaluate: 5,
+      },
+      {
+        userId: "3",
+        content: "dep da man 3",
+        userName: "Minhqn",
+        evaluate: 5,
+      },
+      {
+        userId: "4",
+        content: "dep da man 4",
+        userName: "Minhdz",
+        evaluate: 5,
+      },
+    ],
     size: ["S", "M", "L", "XL", "2XL"],
     sizeThumbNail:
       "https://shop.mixigaming.com/wp-content/uploads/2024/05/438299703_980381316392135_3793514272241113458_n-800x400.jpg",
@@ -68,6 +146,32 @@ export const products: IProduct[] = [
     rate: 5,
     category: "",
     price: 200000,
+    comments: [
+      {
+        userId: "1",
+        content: "dep da man",
+        userName: "Minh123",
+        evaluate: 5,
+      },
+      {
+        userId: "2",
+        content: "dep da man 2",
+        userName: "Minhvt",
+        evaluate: 5,
+      },
+      {
+        userId: "3",
+        content: "dep da man 3",
+        userName: "Minhqn",
+        evaluate: 5,
+      },
+      {
+        userId: "4",
+        content: "dep da man 4",
+        userName: "Minhdz",
+        evaluate: 5,
+      },
+    ],
     size: ["S", "M", "L", "XL", "2XL"],
     sizeThumbNail:
       "https://shop.mixigaming.com/wp-content/uploads/2024/05/438299703_980381316392135_3793514272241113458_n-800x400.jpg",
@@ -86,6 +190,32 @@ export const products: IProduct[] = [
     rate: 5,
     category: "",
     price: 200000,
+    comments: [
+      {
+        userId: "1",
+        content: "dep da man",
+        userName: "Minh123",
+        evaluate: 5,
+      },
+      {
+        userId: "2",
+        content: "dep da man 2",
+        userName: "Minhvt",
+        evaluate: 5,
+      },
+      {
+        userId: "3",
+        content: "dep da man 3",
+        userName: "Minhqn",
+        evaluate: 5,
+      },
+      {
+        userId: "4",
+        content: "dep da man 4",
+        userName: "Minhdz",
+        evaluate: 5,
+      },
+    ],
     size: ["S", "M", "L", "XL", "2XL"],
     sizeThumbNail:
       "https://shop.mixigaming.com/wp-content/uploads/2024/05/438299703_980381316392135_3793514272241113458_n-800x400.jpg",
@@ -104,6 +234,32 @@ export const products: IProduct[] = [
     rate: 5,
     category: "",
     price: 200000,
+    comments: [
+      {
+        userId: "1",
+        content: "dep da man",
+        userName: "Minh123",
+        evaluate: 5,
+      },
+      {
+        userId: "2",
+        content: "dep da man 2",
+        userName: "Minhvt",
+        evaluate: 5,
+      },
+      {
+        userId: "3",
+        content: "dep da man 3",
+        userName: "Minhqn",
+        evaluate: 5,
+      },
+      {
+        userId: "4",
+        content: "dep da man 4",
+        userName: "Minhdz",
+        evaluate: 5,
+      },
+    ],
     size: ["S", "M", "L", "XL", "2XL"],
     sizeThumbNail:
       "https://shop.mixigaming.com/wp-content/uploads/2024/05/438299703_980381316392135_3793514272241113458_n-800x400.jpg",
@@ -122,6 +278,32 @@ export const products: IProduct[] = [
     rate: 5,
     category: "",
     price: 200000,
+    comments: [
+      {
+        userId: "1",
+        content: "dep da man",
+        userName: "Minh123",
+        evaluate: 5,
+      },
+      {
+        userId: "2",
+        content: "dep da man 2",
+        userName: "Minhvt",
+        evaluate: 5,
+      },
+      {
+        userId: "3",
+        content: "dep da man 3",
+        userName: "Minhqn",
+        evaluate: 5,
+      },
+      {
+        userId: "4",
+        content: "dep da man 4",
+        userName: "Minhdz",
+        evaluate: 5,
+      },
+    ],
     size: ["S", "M", "L", "XL", "2XL"],
     sizeThumbNail:
       "https://shop.mixigaming.com/wp-content/uploads/2024/05/438299703_980381316392135_3793514272241113458_n-800x400.jpg",
@@ -140,6 +322,32 @@ export const products: IProduct[] = [
     rate: 5,
     category: "",
     price: 200000,
+    comments: [
+      {
+        userId: "1",
+        content: "dep da man",
+        userName: "Minh123",
+        evaluate: 5,
+      },
+      {
+        userId: "2",
+        content: "dep da man 2",
+        userName: "Minhvt",
+        evaluate: 5,
+      },
+      {
+        userId: "3",
+        content: "dep da man 3",
+        userName: "Minhqn",
+        evaluate: 5,
+      },
+      {
+        userId: "4",
+        content: "dep da man 4",
+        userName: "Minhdz",
+        evaluate: 5,
+      },
+    ],
     size: ["S", "M", "L", "XL", "2XL"],
     sizeThumbNail:
       "https://shop.mixigaming.com/wp-content/uploads/2024/05/438299703_980381316392135_3793514272241113458_n-800x400.jpg",
@@ -158,6 +366,32 @@ export const products: IProduct[] = [
     rate: 5,
     category: "",
     price: 200000,
+    comments: [
+      {
+        userId: "1",
+        content: "dep da man",
+        userName: "Minh123",
+        evaluate: 5,
+      },
+      {
+        userId: "2",
+        content: "dep da man 2",
+        userName: "Minhvt",
+        evaluate: 5,
+      },
+      {
+        userId: "3",
+        content: "dep da man 3",
+        userName: "Minhqn",
+        evaluate: 5,
+      },
+      {
+        userId: "4",
+        content: "dep da man 4",
+        userName: "Minhdz",
+        evaluate: 5,
+      },
+    ],
     size: ["S", "M", "L", "XL", "2XL"],
     sizeThumbNail:
       "https://shop.mixigaming.com/wp-content/uploads/2024/05/438299703_980381316392135_3793514272241113458_n-800x400.jpg",
@@ -176,6 +410,32 @@ export const products: IProduct[] = [
     rate: 5,
     category: "",
     price: 200000,
+    comments: [
+      {
+        userId: "1",
+        content: "dep da man",
+        userName: "Minh123",
+        evaluate: 5,
+      },
+      {
+        userId: "2",
+        content: "dep da man 2",
+        userName: "Minhvt",
+        evaluate: 5,
+      },
+      {
+        userId: "3",
+        content: "dep da man 3",
+        userName: "Minhqn",
+        evaluate: 5,
+      },
+      {
+        userId: "4",
+        content: "dep da man 4",
+        userName: "Minhdz",
+        evaluate: 5,
+      },
+    ],
     size: ["S", "M", "L", "XL", "2XL"],
     sizeThumbNail:
       "https://shop.mixigaming.com/wp-content/uploads/2024/05/438299703_980381316392135_3793514272241113458_n-800x400.jpg",
@@ -194,6 +454,32 @@ export const products: IProduct[] = [
     rate: 5,
     category: "",
     price: 200000,
+    comments: [
+      {
+        userId: "1",
+        content: "dep da man",
+        userName: "Minh123",
+        evaluate: 5,
+      },
+      {
+        userId: "2",
+        content: "dep da man 2",
+        userName: "Minhvt",
+        evaluate: 5,
+      },
+      {
+        userId: "3",
+        content: "dep da man 3",
+        userName: "Minhqn",
+        evaluate: 5,
+      },
+      {
+        userId: "4",
+        content: "dep da man 4",
+        userName: "Minhdz",
+        evaluate: 5,
+      },
+    ],
     size: ["S", "M", "L", "XL", "2XL"],
     sizeThumbNail:
       "https://shop.mixigaming.com/wp-content/uploads/2024/05/438299703_980381316392135_3793514272241113458_n-800x400.jpg",
@@ -212,6 +498,32 @@ export const products: IProduct[] = [
     rate: 5,
     category: "",
     price: 200000,
+    comments: [
+      {
+        userId: "1",
+        content: "dep da man",
+        userName: "Minh123",
+        evaluate: 5,
+      },
+      {
+        userId: "2",
+        content: "dep da man 2",
+        userName: "Minhvt",
+        evaluate: 5,
+      },
+      {
+        userId: "3",
+        content: "dep da man 3",
+        userName: "Minhqn",
+        evaluate: 5,
+      },
+      {
+        userId: "4",
+        content: "dep da man 4",
+        userName: "Minhdz",
+        evaluate: 5,
+      },
+    ],
     size: ["S", "M", "L", "XL", "2XL"],
     sizeThumbNail:
       "https://shop.mixigaming.com/wp-content/uploads/2024/05/438299703_980381316392135_3793514272241113458_n-800x400.jpg",
@@ -230,6 +542,32 @@ export const products: IProduct[] = [
     rate: 5,
     category: "",
     price: 200000,
+    comments: [
+      {
+        userId: "1",
+        content: "dep da man",
+        userName: "Minh123",
+        evaluate: 5,
+      },
+      {
+        userId: "2",
+        content: "dep da man 2",
+        userName: "Minhvt",
+        evaluate: 5,
+      },
+      {
+        userId: "3",
+        content: "dep da man 3",
+        userName: "Minhqn",
+        evaluate: 5,
+      },
+      {
+        userId: "4",
+        content: "dep da man 4",
+        userName: "Minhdz",
+        evaluate: 5,
+      },
+    ],
     size: ["S", "M", "L", "XL", "2XL"],
     sizeThumbNail:
       "https://shop.mixigaming.com/wp-content/uploads/2024/05/438299703_980381316392135_3793514272241113458_n-800x400.jpg",
@@ -248,6 +586,32 @@ export const products: IProduct[] = [
     rate: 5,
     category: "",
     price: 200000,
+    comments: [
+      {
+        userId: "1",
+        content: "dep da man",
+        userName: "Minh123",
+        evaluate: 5,
+      },
+      {
+        userId: "2",
+        content: "dep da man 2",
+        userName: "Minhvt",
+        evaluate: 5,
+      },
+      {
+        userId: "3",
+        content: "dep da man 3",
+        userName: "Minhqn",
+        evaluate: 5,
+      },
+      {
+        userId: "4",
+        content: "dep da man 4",
+        userName: "Minhdz",
+        evaluate: 5,
+      },
+    ],
     size: ["S", "M", "L", "XL", "2XL"],
     sizeThumbNail:
       "https://shop.mixigaming.com/wp-content/uploads/2024/05/438299703_980381316392135_3793514272241113458_n-800x400.jpg",
@@ -268,6 +632,32 @@ export const productsRecent: IProduct[] = [
     rate: 5,
     category: "",
     price: 200000,
+    comments: [
+      {
+        userId: "1",
+        content: "dep da man",
+        userName: "Minh123",
+        evaluate: 5,
+      },
+      {
+        userId: "2",
+        content: "dep da man 2",
+        userName: "Minhvt",
+        evaluate: 5,
+      },
+      {
+        userId: "3",
+        content: "dep da man 3",
+        userName: "Minhqn",
+        evaluate: 5,
+      },
+      {
+        userId: "4",
+        content: "dep da man 4",
+        userName: "Minhdz",
+        evaluate: 5,
+      },
+    ],
     size: ["S", "M", "L", "XL", "2XL"],
     sizeThumbNail:
       "https://shop.mixigaming.com/wp-content/uploads/2024/05/438299703_980381316392135_3793514272241113458_n-800x400.jpg",
@@ -286,6 +676,32 @@ export const productsRecent: IProduct[] = [
     rate: 5,
     category: "",
     price: 200000,
+    comments: [
+      {
+        userId: "1",
+        content: "dep da man",
+        userName: "Minh123",
+        evaluate: 5,
+      },
+      {
+        userId: "2",
+        content: "dep da man 2",
+        userName: "Minhvt",
+        evaluate: 5,
+      },
+      {
+        userId: "3",
+        content: "dep da man 3",
+        userName: "Minhqn",
+        evaluate: 5,
+      },
+      {
+        userId: "4",
+        content: "dep da man 4",
+        userName: "Minhdz",
+        evaluate: 5,
+      },
+    ],
     size: ["S", "M", "L", "XL", "2XL"],
     sizeThumbNail:
       "https://shop.mixigaming.com/wp-content/uploads/2024/05/438299703_980381316392135_3793514272241113458_n-800x400.jpg",
