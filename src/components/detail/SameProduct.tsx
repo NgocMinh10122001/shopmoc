@@ -7,8 +7,8 @@ export default function SameProduct({ products }: { products: IProduct[] }) {
   return (
     <>
       <Carousel arrows={true} slidesToShow={4} slidesToScroll={1} dots={false}>
-        {products.map((item) => (
-          <Product product={item} />
+        {products.map((item, index) => (
+          <Product key={index} product={item} />
         ))}
       </Carousel>
     </>

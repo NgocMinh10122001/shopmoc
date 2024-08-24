@@ -10,7 +10,7 @@ export default function ProductsRecent(props: IProps) {
   return (
     <>
       {productsRecent.map((product, index) => (
-        <div key={product.id} className="flex gap-5 w-full py-[10px] ">
+        <div key={index} className="flex gap-5 w-full py-[10px] ">
           <img
             src={product.thumbNail[0]}
             alt="no-img"
