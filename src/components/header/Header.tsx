@@ -92,6 +92,7 @@ function Header() {
                   value={""}
                   placeholder="Tìm kiếm"
                   className=" h-[25px] text-xs bg-transparent py-2 outline-none"
+                  onChange={() => {}}
                 />
                 <FaSearch size={16} />
               </div>
