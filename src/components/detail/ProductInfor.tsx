@@ -92,6 +92,9 @@ export default function ProductInfor({
                 //   setPostionX(e.nativeEvent.clientX - zoomLeft);
                 //   setPostionY(e.nativeEvent.clientY - zoomTop);
                 // }}
+                style={{
+                  transform: `translateX(-${currentIndex}00%)`
+                }}
               >
                 <img
                   src={`${item}`}
