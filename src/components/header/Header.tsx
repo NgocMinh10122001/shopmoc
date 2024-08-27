@@ -28,7 +28,7 @@ function Header() {
           <div className="left flex items-center gap-7">
             <Link
               href={"/"}
-              className="logo bg-[url('https://shop.mixigaming.com/wp-content/uploads/2019/06/logo-mixi-t%C3%A9t.png')] bg-contain w-[151px] h-[90px]"
+              className="logo bg-[url('https://elise.vn/media/logo/default/logo_color.png')] bg-no-repeat bg-contain w-[151px] h-[90px] bg-center"
             ></Link>
             <div className="hidden min-[1026px]:flex menu  items-center gap-5">
               <div className="relative py-3 cursor-pointer group">

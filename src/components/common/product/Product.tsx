@@ -38,12 +38,12 @@ function Product({ product }: { product: IProduct }) {
         <img
           src={`${product.thumbNail[0]}`}
           alt="no-img"
-          className={`absolute top-0 bottom-0 left-0 right-0 opacity-100 group-hover:opacity-0 h-full object-cover duration-1000 ease-in-out`}
+          className={`absolute top-0 bottom-0 w-full left-0 right-0 opacity-100 group-hover:opacity-0 h-full object-cover duration-1000 ease-in-out`}
         />
         <img
           src={`${product.thumbNail[1]}`}
           alt="no-img"
-          className={`absolute top-0 bottom-0 left-0 right-0 opacity-0 group-hover:opacity-100 h-full object-cover duration-1000 ease-in-out`}
+          className={`absolute top-0 bottom-0 w-full  left-0 right-0 opacity-0 group-hover:opacity-100 h-full object-cover duration-1000 ease-in-out`}
         />
         {product?.status === "off" && (
           <div className="status absolute w-full h-fit py-5 bg-white opacity-70 top-[40%] text-center">
@@ -62,7 +62,7 @@ function Product({ product }: { product: IProduct }) {
       </div>
       <div className="content text-black text-center">
         <div className="top mt-3 text-light-gray">
-          <p className="font-light text-xs tracking-wide">{product?.title}</p>
+          <p className="font-light text-xs tracking-wide uppercase">{product?.title}</p>
           <p className="font-light text-base text-deep-green tracking-wide pt-1">
             {product?.des}
           </p>

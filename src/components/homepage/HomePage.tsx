@@ -11,7 +11,7 @@ function HomePage() {
       <div className="home-banner relative z-30">
         {/* <div className="bg-[url('https://shop.mixigaming.com/wp-content/uploads/2024/02/419152112_384288470804062_5335351375390162625_n-scaled.jpg')] w-full h-[547px] bg-center bg-cover bg-no-repeat"></div> */}
         <img
-          src="https://shop.mixigaming.com/wp-content/uploads/2024/02/419152112_384288470804062_5335351375390162625_n-scaled.jpg"
+          src="https://elise.vn/media/wysiwyg/ECOM/cv-3007.jpg"
           alt="no anh"
           className="object-cover w-full h-full"
         />
@@ -42,14 +42,14 @@ function HomePage() {
           loop
         >
           <source
-            src="https://shop.mixigaming.com/wp-content/uploads/2020/09/video-1598728053.mp4"
+            src="https://vod.freecaster.com/louisvuitton/9cb5af35-66af-44af-abd5-9d1927aae873/025ox6D9WP1G8bMzeSeXkuZV_9.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
         </video>
         <div className="  content-video absolute left-[50%] top-[35%] -translate-x-[50%] flex flex-col gap-4">
           <h3 className="text-2xl font-semibold text-white tracking-wide text-center">
-            MixiShop
+            EliseShop
           </h3>
           <p className="text-base font-light  text-white tracking-wide text-center">
             Cập nhật thông tin về sản phẩm mới

@@ -22,12 +22,12 @@ export default function ProductInfor({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedValue, setSelectedValue] = useState("");
   const [quantity, setQuantity] = useState<number>(1);
-  const zoomLeft =
-    (document.getElementById("product-zoom")?.offsetLeft as number) + 60;
-  const zoomTop =
-    (document.getElementById("product-zoom")?.offsetTop as number) + 135;
-  const [positionX, setPostionX] = useState<number>();
-  const [positionY, setPostionY] = useState<number>();
+  // const zoomLeft =
+  //   (document.getElementById("product-zoom")?.offsetLeft as number) ;
+  // const zoomTop =
+  //   (document.getElementById("product-zoom")?.offsetTop as number) ;
+  // const [positionX, setPostionX] = useState<number>();
+  // const [positionY, setPostionY] = useState<number>();
 
   const product = products.filter((item) => item.id === +id && item);
   const prevSlide = () => {
@@ -73,7 +73,7 @@ export default function ProductInfor({
                 key={index}
                 src={`${item}`}
                 alt="noimg"
-                className={`w-full h-[120px]  object-cover ${
+                className={`w-full h-[120px]  object-cover  ${
                   currentIndex !== index && "group-hover:-translate-y-[5%]"
                 }   duration-500 ease-in-out`}
                 onClick={() => setCurrentIndex(index)}
@@ -87,21 +87,19 @@ export default function ProductInfor({
               <div
                 key={index}
                 id="product-zoom"
-                className={`w-full h-fit group relative overflow-hidden flex-shrink-0 -translate-x-[${
-                  currentIndex * 100
-                }%] duration-500 `}
-                onMouseMove={(e) => {
-                  setPostionX(e.nativeEvent.clientX - zoomLeft);
-                  setPostionY(e.nativeEvent.clientY - zoomTop);
-                }}
+                className={`w-full h-fit group relative overflow-hidden flex-shrink-0 -translate-x-[${currentIndex}00%] duration-500 `}
+                // onMouseMove={(e) => {
+                //   setPostionX(e.nativeEvent.clientX - zoomLeft);
+                //   setPostionY(e.nativeEvent.clientY - zoomTop);
+                // }}
               >
                 <img
                   src={`${item}`}
                   alt=""
-                  className={`w-full h-fit object-cover hover:scale-150  duration-500 hover:cursor-zoom-in overflow-hidden`}
-                  style={{
-                    transformOrigin: `${positionX}px ${positionY}px`,
-                  }}
+                  className={`w-full h-fit object-cover   duration-500 hover:cursor-zoom-in overflow-hidden`}
+                  // style={{
+                  //   transformOrigin: `${positionX}px ${positionY}px`,
+                  // }}
                 />
                 {/* Left Arrow */}
                 <div className="opacity-0 group-hover:opacity-100 absolute top-[50%] translate-x-2 group-hover:-translate-x-0  translate-y-[-50%] left-5 text-2xl rounded-full  text-black cursor-pointer hover:text-deep-green duration-500 ease-in-out">
@@ -166,9 +164,10 @@ export default function ProductInfor({
                 <option value="" disabled>
                   Chọn một tuỳ chọn
                 </option>
-                <option value="option1">Option 1</option>
+                {product[0].size.map((item, index) => <option key={index} value={`${item}`}>{item}</option>)}
+                {/* <option value="option1">Option 1</option>
                 <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
+                <option value="option3">Option 3</option> */}
               </select>
             </form>
           </div>

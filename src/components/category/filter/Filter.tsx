@@ -1,13 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import TitleFilter from "./TitleFilter";
-import RangeSlider from "react-range-slider-input";
-import "react-range-slider-input/dist/style.css";
 import Link from "next/link";
 import { middle1, productsRecent } from "@/components/type/fakedata";
 import ProductsRecent from "@/components/common/product/ProductsRecent";
+import ReactSlider from "react-slider";
 export default function Filter() {
-  const [price, setPrice] = useState<number[]>([0, 100000]);
+  const [price, setPrice] = useState<number[]>([0, 1000000]);
   const handleChangePrice = (e: any) => {
     setPrice(e);
   };
@@ -16,13 +15,20 @@ export default function Filter() {
     <div className="filter">
       <div className="filter-price">
         <TitleFilter title="Lọc theo giá" />
-        <div className="pt-6 w-full">
-          <RangeSlider
-            min={0}
-            max={100000}
-            defaultValue={price}
-            onInput={handleChangePrice}
-          />
+        <div className="pt-6 w-full slider-container">
+           
+       <ReactSlider
+        className="horizontal-slider"
+        thumbClassName="thumb"
+        trackClassName="track"
+        min={0}
+        max={1000000}
+        step={1}
+        value={price}
+        onChange={handleChangePrice}
+        renderThumb={(props, state) => <div {...props} className="thumb" />}
+        renderTrack={(props, state) => <div {...props} className="track" />}
+      />
           <div className="price-container w-full flex items-center justify-between mt-4">
             <button className="btn-filter-price bg-[#666] hover:bg-[#515151] duration-300 ease-in-out rounded-full px-4 py-2 font-bold tracking-wider uppercase text-xs">
               Lọc
