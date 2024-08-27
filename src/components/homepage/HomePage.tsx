@@ -8,7 +8,7 @@ import { FaInstagram } from "react-icons/fa";
 function HomePage() {
   return (
     <main className="home-container ">
-      <div className="home-banner relative z-30">
+      <div className="home-banner relative lg:z-30 ">
         {/* <div className="bg-[url('https://shop.mixigaming.com/wp-content/uploads/2024/02/419152112_384288470804062_5335351375390162625_n-scaled.jpg')] w-full h-[547px] bg-center bg-cover bg-no-repeat"></div> */}
         <img
           src="https://elise.vn/media/wysiwyg/ECOM/cv-3007.jpg"
