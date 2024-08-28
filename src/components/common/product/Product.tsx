@@ -24,11 +24,11 @@ const Product: React.FC<ProductProps> = ({ product }) => {
 
   return (
     <div
-      className="product w-full overflow-hidden cursor-pointer"
+      className="product w-full overflow-hidden cursor-pointer "
       onClick={() => router.push(`/san-pham/${product.id}`)}
     >
       <div
-        className={`zoomOut group bg-no-repeat w-full cursor-pointer relative`}
+        className={`zoomOut group bg-no-repeat w-full  cursor-pointer relative`}
         style={{
           height: height > 678 ? 407 : height * 0.52994791666,
         }}
@@ -60,7 +60,9 @@ const Product: React.FC<ProductProps> = ({ product }) => {
       </div>
       <div className="content text-black text-center">
         <div className="top mt-3 text-light-gray">
-          <p className="font-light text-xs tracking-wide uppercase">{product?.title}</p>
+          <p className="font-light text-xs tracking-wide uppercase">
+            {product?.title}
+          </p>
           <p className="font-light text-base text-deep-green tracking-wide pt-1">
             {product?.des}
           </p>

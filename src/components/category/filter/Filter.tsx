@@ -13,23 +13,22 @@ export default function Filter() {
 
   return (
     <div className="filter">
-      <div className="filter-price">
+      <div className="filter-price max-w-full">
         <TitleFilter title="Lọc theo giá" />
-        <div className="pt-6 w-full slider-container">
-           
-       <ReactSlider
-        className="horizontal-slider"
-        thumbClassName="thumb"
-        trackClassName="track"
-        min={0}
-        max={1000000}
-        step={1}
-        value={price}
-        onChange={handleChangePrice}
-        renderThumb={(props, state) => <div {...props} className="thumb" />}
-        renderTrack={(props, state) => <div {...props} className="track" />}
-      />
-          <div className="price-container w-full flex items-center justify-between mt-4">
+        <div className="pt-6 max-w-full slider-container">
+          <ReactSlider
+            className="horizontal-slider"
+            thumbClassName="thumb"
+            trackClassName="track"
+            min={0}
+            max={1000000}
+            step={1}
+            value={price}
+            onChange={handleChangePrice}
+            renderThumb={(props, state) => <div {...props} className="thumb" />}
+            renderTrack={(props, state) => <div {...props} className="track" />}
+          />
+          <div className="price-container w-full flex  max-sm:gap-4 max-sm:flex-col-reverse min-sm:items-center justify-between mt-4">
             <button className="btn-filter-price bg-[#666] hover:bg-[#515151] duration-300 ease-in-out rounded-full px-4 py-2 font-bold tracking-wider uppercase text-xs">
               Lọc
             </button>

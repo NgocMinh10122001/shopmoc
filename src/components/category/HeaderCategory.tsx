@@ -14,9 +14,9 @@ export default function HeaderCategory({
     setSelectedValue(event.target.value);
   };
   return (
-    <div className="header-category w-full flex items-center justify-between">
+    <div className="max-lg:flex-col max-lg:gap-4 header-category w-full flex items-center justify-between">
       <div className="left">
-        <h2 className="text-black font-bold text-2xl uppercase mb-1">
+        <h2 className="text-black font-bold text-2xl uppercase mb-1 max-lg:text-center">
           {title}
         </h2>
         <div className="flex items-center gap-2 text-light-gray">
@@ -29,11 +29,11 @@ export default function HeaderCategory({
           </span>
         </div>
       </div>
-      <div className="right flex items-center gap-4 text-black">
+      <div className="right flex max-sm:flex-col items-center gap-4 text-black max-w-full">
         <span className="font-light text-base">
           Hiển thị {currentP} của {totalP} kết quả
         </span>
-        <form className="px-3 py-2  shadow-md rounded-sm overflow-hidden bg-white ring-1 ring-gray-300 w-[240px]">
+        <form className="px-3 py-2  shadow-md rounded-sm overflow-hidden bg-white max-w-full ring-1 ring-gray-300 w-[240px]">
           <select
             id="options"
             value={selectedValue}

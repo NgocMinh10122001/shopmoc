@@ -13,7 +13,7 @@ function Header() {
   const [showCate, setShowCate] = useState(false);
   return (
     <header
-      className={`text-black h-[100px] bg-white shadow-lg relative    pt-[6px] ${
+      className={`text-black h-[100px] bg-white shadow-lg relative  max-lg:z-40  pt-[6px] ${
         showCate ? "z-40" : "z-30"
       }`}
     >
