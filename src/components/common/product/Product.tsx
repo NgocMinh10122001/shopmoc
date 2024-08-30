@@ -28,7 +28,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
       onClick={() => router.push(`/san-pham/${product.id}`)}
     >
       <div
-        className={`zoomOut group bg-no-repeat w-full  cursor-pointer relative`}
+        className={`zoomOut group bg-no-repeat w-full  cursor-pointer relative rounded-sm overflow-hidden`}
         style={{
           height: height > 678 ? 407 : height * 0.52994791666,
         }}
@@ -51,7 +51,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
           </div>
         )}
         {product?.status === "sell" && (
-          <div className="status absolute w-fit h-fit p-2 bg-red-700 opacity-70 shadow-lg shadow-red-500 top-0 right-0 text-center">
+          <div className="status absolute w-fit h-fit p-2 bg-red-700 opacity-70 shadow-lg shadow-red-500 top-0 right-0 rounded-sm text-center">
             <span className="uppercase text-white text-base font-semibold">
               Giảm giá
             </span>

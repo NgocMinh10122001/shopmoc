@@ -13,13 +13,10 @@ function Header() {
   const [showBar, setShowBar] = useState(false);
   const [showCate, setShowCate] = useState(false);
   const pathname = usePathname();
-  console.log("check path ", pathname);
 
   return (
     <header
-      className={`text-black h-[100px] bg-white shadow-lg relative  max-lg:z-40  pt-[6px] ${
-        showCate ? "z-40" : "z-30"
-      }`}
+      className={`text-black h-[100px] bg-white shadow-md relative    pt-[6px] z-40`}
     >
       <div className="contai w-full container-m relative z-20">
         <div className=" flex items-center justify-between">
@@ -37,7 +34,7 @@ function Header() {
             <div className="hidden min-[1026px]:flex menu  items-center gap-5">
               <div className="relative py-3 cursor-pointer group">
                 <FaSearch size={16} />
-                <div className="w-full h-1 rounded-full bg-deep-green opacity-0 absolute bottom-0 group-hover:opacity-100 duration-300 ease-in-out "></div>
+                <div className="w-full h-1 rounded-sm bg-deep-green opacity-0 absolute bottom-0 group-hover:opacity-100 duration-300 ease-in-out "></div>
               </div>
               <Link
                 href={"/"}
@@ -47,7 +44,7 @@ function Header() {
               >
                 Home
                 <div
-                  className={`w-full h-1 rounded-full bg-deep-green opacity-0 absolute bottom-0 group-hover:opacity-100 ${
+                  className={`w-full h-1 rounded-sm bg-deep-green opacity-0 absolute bottom-0 group-hover:opacity-100 ${
                     pathname === "/" && "opacity-100"
                   } duration-300 ease-in-out `}
                 ></div>
@@ -75,7 +72,7 @@ function Header() {
                   }  duration-300 ease-in-out`}
                 />
                 <div
-                  className={`w-full h-1 rounded-full bg-deep-green opacity-0 absolute bottom-0 group-hover:opacity-100 ${
+                  className={`w-full h-1 rounded-sm bg-deep-green opacity-0 absolute bottom-0 group-hover:opacity-100 ${
                     pathname.includes("/danh-muc") && "opacity-100"
                   } duration-300 ease-in-out `}
                 ></div>
@@ -90,7 +87,7 @@ function Header() {
               >
                 Thông báo
                 <div
-                  className={`w-full h-1 rounded-full bg-deep-green opacity-0 absolute bottom-0 group-hover:opacity-100 ${
+                  className={`w-full h-1 rounded-sm bg-deep-green opacity-0 absolute bottom-0 group-hover:opacity-100 ${
                     pathname.includes("/thong-bao") && "opacity-100"
                   } duration-300 ease-in-out `}
                 ></div>
@@ -119,7 +116,7 @@ function Header() {
         >
           <ul>
             <li className="py-4 px-4 ">
-              <div className="mobile-search rounded-full flex justify-between items-center px-3  bg-[#f0f0f0] py-1 w-full">
+              <div className="mobile-search rounded-sm flex justify-between items-center px-3  bg-[#f0f0f0] py-1 w-full">
                 <input
                   type="text"
                   value={""}
@@ -136,7 +133,7 @@ function Header() {
             <li className="py-4 border-t-[1px] border-t-gray-100 px-4 text-light-gray font-semibold text-xs tracking-wide uppercase cursor-pointer">
               <Link href={""} className="flex items-center gap-2">
                 <span>Đồ Lưu Niệm Mixi</span>{" "}
-                <div className="bg-red-600 rounded-md px-2 py-1 text-white text-xs">
+                <div className="bg-red-600 rounded-sm px-2 py-1 text-white text-xs">
                   HOT
                 </div>
               </Link>
@@ -166,7 +163,9 @@ function Header() {
           ></div>
         )}
       </div>
-      <CategoryMenu showCate={showCate} />
+      <div className={`opacity-0 ${showCate && " opacity-100 "} duration-500`}>
+        {showCate && <CategoryMenu />}
+      </div>
     </header>
   );
 }

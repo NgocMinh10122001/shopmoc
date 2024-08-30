@@ -5,7 +5,7 @@ import FooterCustom from "./FooterCustom";
 
 function Footer() {
   return (
-    <footer className=" w-full h-fit border-t-[1px] border-gray-300 bg-white  py-10 ">
+    <footer className=" w-full h-fit  shadow-2xl  bg-white  py-10 ">
       <div className="w-full container-m grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
         <div className="top">
           <FooterContent

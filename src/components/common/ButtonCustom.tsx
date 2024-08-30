@@ -2,7 +2,7 @@ import React from "react";
 
 function ButtonCustom({ title, style }: { title: string; style: string }) {
   return (
-    <button className={`${style}`}>
+    <button className={`${style} rounded-sm`}>
       <span className="uppercase">{title}</span>
     </button>
   );
