@@ -72,7 +72,7 @@ export default function ProductDetail() {
       </div>
       <div className="same">
         <hr className="mb-4" />
-        <h2 className="title text-black font-bold text-3xl uppercase mb-4">
+        <h2 className="title text-black font-bold text-2xl max-w-full sm:text-3xl uppercase mb-4">
           Sản phẩm tương tự
         </h2>
         <SameProduct products={products} />

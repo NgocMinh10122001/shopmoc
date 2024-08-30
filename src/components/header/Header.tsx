@@ -7,10 +7,14 @@ import { FaPhone } from "react-icons/fa6";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa6";
 import CategoryMenu from "./CategoryMenu";
+import { usePathname } from "next/navigation";
 
 function Header() {
   const [showBar, setShowBar] = useState(false);
   const [showCate, setShowCate] = useState(false);
+  const pathname = usePathname();
+  console.log("check path ", pathname);
+
   return (
     <header
       className={`text-black h-[100px] bg-white shadow-lg relative  max-lg:z-40  pt-[6px] ${
@@ -28,7 +32,7 @@ function Header() {
           <div className="left flex items-center gap-7">
             <Link
               href={"/"}
-              className="logo bg-[url('https://elise.vn/media/logo/default/logo_color.png')] bg-no-repeat bg-contain w-[151px] h-[90px] bg-center"
+              className="logo bg-[url('https://theme.hstatic.net/200000881795/1001243022/14/logo.png?v=137')] bg-no-repeat bg-contain w-[151px] h-[90px] bg-center"
             ></Link>
             <div className="hidden min-[1026px]:flex menu  items-center gap-5">
               <div className="relative py-3 cursor-pointer group">
@@ -37,10 +41,16 @@ function Header() {
               </div>
               <Link
                 href={"/"}
-                className="uppercase font-bold text-[14px] text-light-gray duration-300 ease-in-out hover:text-deep-green !leading-[16px] tracking-wide relative py-3 group"
+                className={`uppercase font-bold text-[14px]  duration-300 ease-in-out hover:text-deep-green ${
+                  pathname === "/" ? "text-deep-green" : " text-light-gray"
+                } !leading-[16px] tracking-wide relative py-3 group`}
               >
                 Home
-                <div className="w-full h-1 rounded-full bg-deep-green opacity-0 absolute bottom-0 group-hover:opacity-100 duration-300 ease-in-out "></div>
+                <div
+                  className={`w-full h-1 rounded-full bg-deep-green opacity-0 absolute bottom-0 group-hover:opacity-100 ${
+                    pathname === "/" && "opacity-100"
+                  } duration-300 ease-in-out `}
+                ></div>
               </Link>
               <div
                 className="flex items-center gap-2 relative py-3 group cursor-pointer"
@@ -48,19 +58,42 @@ function Header() {
               >
                 <Link
                   href={""}
-                  className="uppercase font-bold text-[14px] text-light-gray duration-300 ease-in-out hover:text-deep-green !leading-[16px] tracking-wide "
+                  className={`uppercase font-bold text-[14px]  duration-300 ease-in-out group-hover:text-deep-green ${
+                    showCate || pathname.includes("/danh-muc")
+                      ? "text-deep-green"
+                      : "text-light-gray"
+                  } !leading-[16px] tracking-wide relative group`}
                 >
                   Danh mục sản phẩm
                 </Link>
-                <GoChevronDown size={16} color="#666666d9" />
-                <div className="w-full h-1 rounded-full bg-deep-green opacity-0 absolute bottom-0 group-hover:opacity-100 duration-300 ease-in-out "></div>
+                <GoChevronDown
+                  size={16}
+                  className={`${
+                    showCate || pathname.includes("/danh-muc")
+                      ? "text-deep-green rotate-180"
+                      : "text-light-gray"
+                  }  duration-300 ease-in-out`}
+                />
+                <div
+                  className={`w-full h-1 rounded-full bg-deep-green opacity-0 absolute bottom-0 group-hover:opacity-100 ${
+                    pathname.includes("/danh-muc") && "opacity-100"
+                  } duration-300 ease-in-out `}
+                ></div>
               </div>
               <Link
                 href={""}
-                className="uppercase font-bold text-[14px] text-light-gray duration-300 ease-in-out hover:text-deep-green !leading-[16px] tracking-wide relative py-3 group"
+                className={`uppercase font-bold text-[14px]  duration-300 ease-in-out hover:text-deep-green ${
+                  pathname.includes("/thong-bao")
+                    ? "text-deep-green"
+                    : " text-light-gray"
+                } !leading-[16px] tracking-wide relative py-3 group`}
               >
                 Thông báo
-                <div className=" w-full h-1 rounded-full bg-deep-green opacity-0 absolute bottom-0 group-hover:opacity-100 duration-300 ease-in-out"></div>
+                <div
+                  className={`w-full h-1 rounded-full bg-deep-green opacity-0 absolute bottom-0 group-hover:opacity-100 ${
+                    pathname.includes("/thong-bao") && "opacity-100"
+                  } duration-300 ease-in-out `}
+                ></div>
               </Link>
             </div>
           </div>

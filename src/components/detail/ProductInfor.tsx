@@ -58,8 +58,8 @@ export default function ProductInfor({
   };
   return (
     <div className="detail grid grid-cols-12 gap-4">
-      <div className="left col-span-7 grid grid-cols-12 gap-4">
-        <div className="scroll col-span-2 flex flex-col gap-4 max-h-[913px] overflow-scroll">
+      <div className="left col-span-12 lg:col-span-7 flex flex-col-reverse sm:grid sm:grid-cols-12  gap-4">
+        <div className="scroll col-span-2 flex sm:flex-col gap-4 max-h-[913px] overflow-scroll">
           {product[0].thumbNail.map((item, index) => (
             <div
               key={index}
@@ -87,19 +87,19 @@ export default function ProductInfor({
               <div
                 key={index}
                 id="product-zoom"
-                className={`w-full h-fit group relative overflow-hidden flex-shrink-0 -translate-x-[${currentIndex}00%] duration-500 `}
+                className={`w-full h-fit  group relative overflow-hidden flex-shrink-0 -translate-x-[${currentIndex}00%] duration-500 `}
                 // onMouseMove={(e) => {
                 //   setPostionX(e.nativeEvent.clientX - zoomLeft);
                 //   setPostionY(e.nativeEvent.clientY - zoomTop);
                 // }}
                 style={{
-                  transform: `translateX(-${currentIndex}00%)`
+                  transform: `translateX(-${currentIndex}00%)`,
                 }}
               >
                 <img
                   src={`${item}`}
                   alt=""
-                  className={`w-full h-fit object-cover   duration-500 hover:cursor-zoom-in overflow-hidden`}
+                  className={`w-full h-fit max-h-[700px] object-cover object-center  duration-500  overflow-hidden`}
                   // style={{
                   //   transformOrigin: `${positionX}px ${positionY}px`,
                   // }}
@@ -117,9 +117,9 @@ export default function ProductInfor({
           </div>
         </div>
       </div>
-      <div className="right col-span-5 ">
+      <div className="right col-span-12 lg:col-span-5 ">
         <div className="">
-          <h2 className="title text-black font-bold text-3xl uppercase mb-4">
+          <h2 className=" title text-black font-bold text-2xl sm:text-3xl uppercase mb-4 max-w-full">
             {product[0].title}
           </h2>
           <div className="bg-[#0000001a] w-[8%] rounded-full h-1 bar mb-4"></div>
@@ -135,7 +135,7 @@ export default function ProductInfor({
             (7 đánh giá của khách hàng)
           </p>
           <div
-            className={`font-bold text-2xl tracking-wide mb-4 ${
+            className={`font-bold text-xl sm:text-2xl tracking-wide mb-4 ${
               product[0].oldPrice && "flex  items-center gap-3 pt-1 price"
             }`}
           >
@@ -153,11 +153,11 @@ export default function ProductInfor({
               className="w-full h-fit object-cover"
             />
           </div>
-          <div className="size flex items-center justify-between mb-8">
+          <div className="size flex max-sm:flex-col max-sm:gap-4  sm:items-center justify-between mb-8">
             <p className="text-black text-base font-semibold uppercase tracking-wide">
               SIZE
             </p>
-            <form className="px-3 py-1  shadow-sm  overflow-hidden bg-reduce-light-gray ring-1 ring-gray-300 w-[300px] rounded-full">
+            <form className="px-3 py-1  shadow-sm  overflow-hidden bg-reduce-light-gray ring-1 ring-gray-300 w-[300px] max-w-full rounded-full">
               <select
                 id="options"
                 value={selectedValue}
@@ -167,15 +167,19 @@ export default function ProductInfor({
                 <option value="" disabled>
                   Chọn một tuỳ chọn
                 </option>
-                {product[0].size.map((item, index) => <option key={index} value={`${item}`}>{item}</option>)}
+                {product[0].size.map((item, index) => (
+                  <option key={index} value={`${item}`}>
+                    {item}
+                  </option>
+                ))}
                 {/* <option value="option1">Option 1</option>
                 <option value="option2">Option 2</option>
                 <option value="option3">Option 3</option> */}
               </select>
             </form>
           </div>
-          <div className="quantity flex items-center gap-4 mb-8">
-            <div className="add-sub  flex items-center overflow-hidden">
+          <div className="quantity flex max-sm:flex-wrap items-center gap-4 mb-8 ">
+            <div className="add-sub  flex items-center overflow-hidden max-sm:max-w-full">
               <div
                 className="left text-black text-sm rounded-l-full border-[1px] border-light-gray px-3 py-[10px] hover:cursor-pointer hover:bg-white duration-300 ease-in-out"
                 onClick={() => handleChangeQuantity("reduce")}
@@ -198,7 +202,7 @@ export default function ProductInfor({
             </div>
             <ButtonCustom
               title="Thêm vào giỏ hàng"
-              style="text-sm overflow-hidden duration-300 ease-in-out font-bold  bg-[#d35400] opacity-50 text-white   hover:opacity-80 w-fit h-fit  px-5 py-3 flex justify-center items-center rounded-full"
+              style="text-sm overflow-hidden duration-300 ease-in-out font-bold  bg-[#d35400] opacity-50 text-white   hover:opacity-80 w-fit h-fit  px-5 py-3 flex justify-center items-center rounded-full max-sm:max-w-full"
             />
           </div>
         </div>

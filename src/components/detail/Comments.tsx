@@ -32,7 +32,7 @@ export default function Comments({
 
   return (
     <div className="w-full grid grid-cols-12 my-4 gap-4">
-      <div className="col-span-7">
+      <div className="col-span-12 md:col-span-7">
         <p className="text-black font-bold tracking-wide text-xl ">
           {comments.length ?? ""} đánh giá cho {productName}
         </p>
@@ -62,14 +62,14 @@ export default function Comments({
             </div>
           ))}
       </div>
-      <div className="col-span-5 bg-transparent p-6 border-[2px] border-deep-green rounded-sm text-black">
+      <div className="col-span-12 md:col-span-5 bg-transparent p-6 border-[2px] border-deep-green rounded-sm text-black">
         <p className="font-bold text-xl tracking-wide mb-4">Thêm đánh giá </p>
         <form action="" className="text-black flex flex-col gap-4">
           <div className="vote-star">
             <label htmlFor="#vote" className="font-semibold text-sm ">
               Đánh giá của bạn *
             </label>
-            <div className="flex gap-4 items-center" id="vote ">
+            <div className="flex flex-wrap gap-4 items-center" id="vote ">
               {options.map((option, index) => (
                 <div key={index} className="flex items-center gap-2  mt-2 mb-4">
                   <input
