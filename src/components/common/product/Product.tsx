@@ -28,7 +28,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
       onClick={() => router.push(`/san-pham/${product.id}`)}
     >
       <div
-        className={`zoomOut group bg-no-repeat w-full  cursor-pointer relative rounded-sm overflow-hidden`}
+        className={`zoomOut group bg-no-repeat w-full bg-white  cursor-pointer relative rounded-sm overflow-hidden`}
         style={{
           height: height > 678 ? 407 : height * 0.52994791666,
         }}
@@ -36,12 +36,12 @@ const Product: React.FC<ProductProps> = ({ product }) => {
         <img
           src={`${product.thumbNail[0]}`}
           alt="no-img"
-          className={`absolute top-0 bottom-0 w-full left-0 right-0 opacity-100 group-hover:opacity-0 h-full object-cover duration-1000 ease-in-out`}
+          className={`absolute top-0 bottom-0 w-full left-0 right-0 opacity-100 group-hover:opacity-0 h-full object-contain duration-1000 ease-in-out`}
         />
         <img
           src={`${product.thumbNail[1]}`}
           alt="no-img"
-          className={`absolute top-0 bottom-0 w-full left-0 right-0 opacity-0 group-hover:opacity-100 h-full object-cover duration-1000 ease-in-out`}
+          className={`absolute top-0 bottom-0 w-full left-0 right-0 opacity-0 group-hover:opacity-100 h-full object-contain duration-1000 ease-in-out`}
         />
         {product?.status === "off" && (
           <div className="status absolute w-full h-fit py-5 bg-white opacity-70 top-[40%] text-center">

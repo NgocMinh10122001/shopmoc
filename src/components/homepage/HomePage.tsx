@@ -11,9 +11,9 @@ function HomePage() {
       <div className="home-banner relative lg:z-30 ">
         {/* <div className="bg-[url('https://shop.mixigaming.com/wp-content/uploads/2024/02/419152112_384288470804062_5335351375390162625_n-scaled.jpg')] w-full h-[547px] bg-center bg-cover bg-no-repeat"></div> */}
         <img
-          src="https://theme.hstatic.net/200000881795/1001243022/14/slider_1.jpg?v=137"
+          src="https://teamsecret.gg/cdn/shop/collections/Shop_Banner_2.jpg?v=1709038516"
           alt="no anh"
-          className="object-cover w-full h-full"
+          className="object-contain w-full h-full"
         />
       </div>
       <div className="best-sell py-[75px] container-m">
@@ -49,7 +49,7 @@ function HomePage() {
         </video>
         <div className="  content-video absolute left-[50%] top-[35%] -translate-x-[50%] flex flex-col gap-4">
           <h3 className="text-2xl font-semibold text-white tracking-wide text-center">
-            MixiShop
+            SecretShop
           </h3>
           <p className="text-base font-light  text-white tracking-wide text-center">
             Cập nhật thông tin về sản phẩm mới

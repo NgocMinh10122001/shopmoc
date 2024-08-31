@@ -99,7 +99,7 @@ export default function ProductInfor({
                 <img
                   src={`${item}`}
                   alt=""
-                  className={`w-full h-fit max-h-[700px] object-cover object-center  duration-500  overflow-hidden`}
+                  className={`w-full h-fit  object-cover object-center  duration-500  overflow-hidden`}
                   // style={{
                   //   transformOrigin: `${positionX}px ${positionY}px`,
                   // }}

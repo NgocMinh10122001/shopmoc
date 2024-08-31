@@ -11,7 +11,8 @@ const config: Config = {
       colors: {
         "reduce-light-gray": "#00000008",
         "light-gray": "#666666d9",
-        "deep-green": "#007784",
+        // "deep-green": "#007784",
+        "deep-green": "#000000",
         "category-menu": "#f5f0ea",
       },
       backgroundImage: {
