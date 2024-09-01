@@ -13,7 +13,7 @@ function HomePage() {
         <img
           src="https://teamsecret.gg/cdn/shop/collections/Shop_Banner_2.jpg?v=1709038516"
           alt="no anh"
-          className="object-contain w-full h-full"
+          className="object-cover w-full h-full"
         />
       </div>
       <div className="best-sell py-[75px] container-m">
@@ -23,7 +23,7 @@ function HomePage() {
         <div className="w-full flex justify-center py-10 ">
           <ButtonCustom
             title={"Xem tất cả"}
-            style="text-base overflow-hidden border-2 duration-300 ease-in-out font-semibold border-deep-green bg-white text-deep-green hover:bg-deep-green hover:text-white px-5 py-2 flex justify-center items-center"
+            style="text-base overflow-hidden border-2 duration-300 ease-in-out font-semibold border-deep-green bg-white text-deep-green hover:bg-deep-green hover:text-white px-5 py-2 flex justify-center items-center rounded-sm"
           />
         </div>
         <div className="best-sell-products w-full container-m">
@@ -57,11 +57,11 @@ function HomePage() {
           <div className="flex items-center gap-2 justify-center text-light-gray">
             <ButtonCustom
               title="Fanpage"
-              style=" tracking-wide text-sm overflow-hidden border-2 duration-300 ease-in-out font-bold border-white bg-white  text-light-gray hover:bg-[#f0f0f0]  px-3 py-2  flex justify-center items-center"
+              style="rounded-sm tracking-wide text-sm overflow-hidden border-2 duration-300 ease-in-out font-bold border-white bg-white  text-light-gray hover:bg-[#f0f0f0]  px-3 py-2  flex justify-center items-center"
             />
             <ButtonCustom
               title="Instagram"
-              style="tracking-wide text-sm overflow-hidden border-2 duration-300 ease-in-out font-bold border-white  text-white hover:bg-[#f0f0f0] hover:text-light-gray  px-3 py-2  flex justify-center items-center"
+              style="rounded-sm tracking-wide text-sm overflow-hidden border-2 duration-300 ease-in-out font-bold border-white  text-white hover:bg-[#f0f0f0] hover:text-light-gray  px-3 py-2  flex justify-center items-center"
             />
           </div>
         </div>

@@ -11,6 +11,8 @@ import { transformPrice } from "../type/func";
 import ButtonCustom from "../common/ButtonCustom";
 import { FaFacebookF, FaInstagramSquare, FaTwitter } from "react-icons/fa";
 import { IProduct } from "../type/types";
+import { MdAdd } from "react-icons/md";
+import { RiSubtractFill } from "react-icons/ri";
 
 export default function ProductInfor({
   products,
@@ -179,30 +181,30 @@ export default function ProductInfor({
             </form>
           </div>
           <div className="quantity flex max-sm:flex-wrap items-center gap-4 mb-8 ">
-            <div className="add-sub  flex items-center overflow-hidden max-sm:max-w-full">
+            <div className="add-sub  flex items-center overflow-hidden text-base  border-2 duration-300 ease-in-out font-semibold border-deep-green   text-black  px-3 py-2 justify-center rounded-full">
               <div
-                className="left text-black text-sm rounded-l-full border-[1px] border-light-gray px-3 py-[10px] hover:cursor-pointer hover:bg-white duration-300 ease-in-out"
+                className="left text-black  "
                 onClick={() => handleChangeQuantity("reduce")}
               >
-                -
+                <RiSubtractFill size={21} color="black" />
               </div>
               <input
                 type={"number"}
-                className="center text-center bg-transparent outline-none  text-black text-sm border-t-[1px] border-b-[1px] border-light-gray  w-[40px] py-[10px]"
+                className="center text-center bg-transparent outline-none  text-black text-base font-bold w-[50px] px-1"
                 value={quantity}
                 onChange={(e: any) => setQuantity(+e.target.value)}
               />
 
               <div
-                className="right text-black text-sm rounded-r-full border-[1px] border-light-gray px-3 py-[10px] hover:cursor-pointer hover:bg-white duration-300 ease-in-out"
+                className="right text-black text-sm  "
                 onClick={() => handleChangeQuantity("add")}
               >
-                +
+                <MdAdd size={20} color="black" />
               </div>
             </div>
             <ButtonCustom
               title="Thêm vào giỏ hàng"
-              style="text-sm overflow-hidden duration-300 ease-in-out font-bold  bg-[#d35400] opacity-50 text-white   hover:opacity-80 w-fit h-fit  px-5 py-3 flex justify-center items-center rounded-full max-sm:max-w-full"
+              style="text-base overflow-hidden border-2 duration-300 ease-in-out font-semibold border-deep-green hover:bg-white  hover:text-deep-green bg-deep-green text-white px-5 py-2 flex justify-center items-center rounded-full"
             />
           </div>
         </div>

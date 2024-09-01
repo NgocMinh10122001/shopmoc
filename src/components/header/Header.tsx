@@ -16,7 +16,9 @@ function Header() {
 
   return (
     <header
-      className={`text-black h-[100px] bg-white shadow-md relative    pt-[6px] z-40`}
+      className={`text-black h-[100px] bg-white shadow-md relative    pt-[6px] ${
+        showCate ? "z-50" : "z-40"
+      }`}
     >
       <div className="contai w-full container-m relative z-20">
         <div className=" flex items-center justify-between">
