@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import "../globals.css";
 
 export const metadata: Metadata = {
-  title: "Borcelle - Admin Dashboard",
-  description: "Admin dashboard to manage Borcelle's data",
+  title: "Secret - Admin Dashboard",
+  description: "Admin dashboard to manage Secret data",
 };
 
 export default function RootLayout({
