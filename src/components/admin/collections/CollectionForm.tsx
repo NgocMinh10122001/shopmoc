@@ -21,8 +21,8 @@ import toast from "react-hot-toast";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
-import ImageUpload from "@/components/custom ui/ImageUpload";
-import Delete from "@/components/custom ui/Delete";
+// import ImageUpload from "@/components/custom ui/ImageUpload";
+// import Delete from "@/components/custom ui/Delete";
 
 const formSchema = z.object({
   title: z.string().min(2).max(20),
@@ -89,7 +89,7 @@ const CollectionForm: React.FC<CollectionFormProps> = ({ initialData }) => {
       {initialData ? (
         <div className="flex items-center justify-between">
           <p className="text-heading2-bold">Edit Collection</p>
-          <Delete id={initialData._id} item="collection" />
+          {/* <Delete id={initialData._id} item="collection" /> */}
         </div>
       ) : (
         <p className="text-heading2-bold">Create Collection</p>
@@ -139,11 +139,11 @@ const CollectionForm: React.FC<CollectionFormProps> = ({ initialData }) => {
               <FormItem>
                 <FormLabel>Image</FormLabel>
                 <FormControl>
-                  <ImageUpload
+                  {/* <ImageUpload
                     value={field.value ? [field.value] : []}
                     onChange={(url) => field.onChange(url)}
                     onRemove={() => field.onChange("")}
-                  />
+                  /> */}
                 </FormControl>
                 <FormMessage />
               </FormItem>
