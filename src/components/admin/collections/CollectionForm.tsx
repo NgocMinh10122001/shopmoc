@@ -31,7 +31,8 @@ const formSchema = z.object({
 });
 
 interface CollectionFormProps {
-  initialData?: CollectionType | null; //Must have "?" to make it optional
+  initialData?: any | null; //Must have "?" to make it optional
+  // sadsa
 }
 
 const CollectionForm: React.FC<CollectionFormProps> = ({ initialData }) => {
@@ -84,6 +85,7 @@ const CollectionForm: React.FC<CollectionFormProps> = ({ initialData }) => {
 
   return (
     <div className="p-10">
+      <div></div>
       {initialData ? (
         <div className="flex items-center justify-between">
           <p className="text-heading2-bold">Edit Collection</p>
